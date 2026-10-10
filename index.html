@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ResuMind - Practice interviews built from your resume</title>
+	<meta name="description" content="Upload your resume and practice with personalized interview questions.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<a class="skip" href="#start">Skip to resume upload</a>
+
+	<header class="nav">
+		<div class="wrap nav-in">
+			<a class="brand" href="#home" aria-label="ResuMind home">
+				<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+					<rect width="28" height="28" rx="9" fill="var(--accent-deep)" />
+					<path d="M9 8h7a4 4 0 0 1 0 8H9m5 0 5 5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+				<span>ResuMind</span>
+			</a>
+			<nav id="menu" class="links" aria-label="Primary">
+				<a href="#home">Home</a>
+				<a href="#how">How it works</a>
+				<a href="#features">Features</a>
+			</nav>
+			<div class="nav-actions">
+				<button id="themeBtn" class="icon-btn" type="button" aria-label="Switch to dark theme"></button>
+				<a class="btn primary sm" href="#start">Start interview</a>
+				<button id="menuBtn" class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+					aria-controls="menu">
+					<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+						<path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section id="home" class="hero wrap">
+			<div class="hero-copy">
+				<h1>Your resume has a story. Let's practice telling it.</h1>
+				<p class="lead">Upload your resume and discover personalized interview questions based on your experience,
+					skills, projects, and achievements.</p>
+				<div class="cta-row">
+					<a class="btn primary" href="#start">Start your interview</a>
+					<a class="btn ghost" href="#how">Explore how it works</a>
+				</div>
+				<p class="caption">Personalized practice. Meaningful questions. Better preparation.</p>
+			</div>
+			<div class="preview card" aria-label="Product preview (illustration)">
+				<div class="pv-head"><span class="orb" aria-hidden="true"></span>
+					<div><strong>Interview preview</strong><small>Project-based, intermediate</small></div>
+				</div>
+				<div class="pv-summary"><small>Resume summary</small>
+					<p>Final-year student. Skills: Python, Burp Suite, SQL. Project: web vulnerability scanner.</p>
+				</div>
+				<div class="bubble ai">You built a web vulnerability scanner. Which design decision would you change if you
+					started again?</div>
+				<div class="bubble me">I would separate crawling from scanning so each can be tested on its own...</div>
+				<div class="pv-bar"><span></span></div>
+			</div>
+		</section>
+
+		<section id="how" class="wrap section">
+			<h2>How it works</h2>
+			<ol class="steps">
+				<li class="card">
+					<h3>Add your resume</h3>
+					<p>Upload a PDF or DOCX, then paste the text so it can be read.</p>
+				</li>
+				<li class="card">
+					<h3>Review the analysis</h3>
+					<p>See the skills, projects, and education found in your text.</p>
+				</li>
+				<li class="card">
+					<h3>Choose your focus</h3>
+					<p>Pick an interview type and a difficulty level.</p>
+				</li>
+				<li class="card">
+					<h3>Practice and reflect</h3>
+					<p>Answer one question at a time and read feedback after each.</p>
+				</li>
+			</ol>
+		</section>
+
+		<section id="features" class="wrap section">
+			<h2>Features</h2>
+			<div class="grid3">
+				<div class="card">
+					<h3>Questions from your resume</h3>
+					<p>Questions name the skills and projects found in your text.</p>
+				</div>
+				<div class="card">
+					<h3>Six interview types</h3>
+					<p>HR, technical, project, behavioral, internship, and resume deep dive.</p>
+				</div>
+				<div class="card">
+					<h3>Feedback per answer</h3>
+					<p>Strengths, gaps, a suggested structure, and one tip.</p>
+				</div>
+				<div class="card">
+					<h3>Session summary</h3>
+					<p>Topics to revise and follow-up questions at the end.</p>
+				</div>
+				<div class="card">
+					<h3>Light and dark themes</h3>
+					<p>Your choice is saved on this device.</p>
+				</div>
+				<div class="card">
+					<h3>Voice answers</h3>
+					<p>Dictate answers in browsers that support speech recognition.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="start" class="wrap section">
+			<h2>Add your resume</h2>
+			<div class="notice" role="note"><strong>Demo mode.</strong> No AI service is connected. Resume text is read with
+				simple keyword rules in your browser, and nothing is uploaded. PDF and DOCX files cannot be read without a
+				parser or backend, so paste your resume text below.</div>
+			<div class="upload-grid">
+				<div>
+					<div id="drop" class="drop" tabindex="0" role="button" aria-describedby="dropHelp">
+						<svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
+							<path d="M12 5h13l9 9v23a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" fill="none"
+								stroke="var(--accent-deep)" stroke-width="2" />
+							<path d="M25 5v9h9M16 24h12M16 30h8" fill="none" stroke="var(--accent-deep)" stroke-width="2"
+								stroke-linecap="round" />
+						</svg>
+						<strong>Upload your resume</strong>
+						<span id="dropHelp">Drag and drop your file here, or browse your device. PDF or DOCX, up to 5 MB.</span>
+						<input id="fileInput" type="file"
+							accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+							hidden>
+					</div>
+					<div id="fileErr" class="err" role="alert" hidden></div>
+					<div id="fileChip" class="chip card" hidden>
+						<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+							<path d="M7 3h9l6 6v15a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" fill="none"
+								stroke="var(--accent-deep)" stroke-width="1.6" />
+						</svg>
+						<div class="chip-meta"><strong id="fName"></strong><small id="fInfo"></small></div>
+						<svg class="tick" width="22" height="22" viewBox="0 0 22 22" role="img" aria-label="File selected">
+							<circle cx="11" cy="11" r="10" fill="var(--ok)" />
+							<path d="M6 11.5l3.2 3L16 8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+						<button id="replaceBtn" class="btn ghost sm" type="button">Replace</button>
+						<button id="removeBtn" class="btn ghost sm" type="button">Remove</button>
+					</div>
+				</div>
+				<div class="field">
+					<label for="resumeText">Resume text</label>
+					<textarea id="resumeText" rows="11"
+						placeholder="Paste your resume here. Section headings such as Summary, Skills, Projects, Education, and Experience help the analysis."></textarea>
+					<div class="row">
+						<button id="sampleBtn" class="btn ghost sm" type="button">Insert sample resume</button>
+						<button id="analyzeBtn" class="btn primary" type="button">Analyze my resume</button>
+					</div>
+					<div id="textErr" class="err" role="alert" hidden></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="analysis" class="wrap section" hidden>
+			<h2>Resume analysis</h2>
+			<p class="muted">Found in your text by keyword rules (demo). Check it for accuracy.</p>
+			<div id="cards" class="grid3"></div>
+			<div class="card prefs">
+				<fieldset>
+					<legend>Interview focus</legend>
+					<div id="focusOpts" class="opts"></div>
+				</fieldset>
+				<fieldset>
+					<legend>Difficulty</legend>
+					<div id="diffOpts" class="opts"></div>
+				</fieldset>
+				<button id="genBtn" class="btn primary" type="button">Generate my questions</button>
+			</div>
+		</section>
+
+		<section id="room" class="wrap section" hidden>
+			<div class="room">
+				<aside class="side card" aria-label="Session details">
+					<h3>Candidate</h3>
+					<p id="sideSummary" class="muted small"></p>
+					<p class="small"><strong>Category:</strong> <span id="sideCat"></span></p>
+					<p class="small"><strong>Progress:</strong> <span id="sideProg"></span></p>
+					<ol id="qNav" class="qnav" aria-label="Questions"></ol>
+					<button id="restartBtn" class="btn ghost sm" type="button">Restart session</button>
+				</aside>
+				<div class="main-panel">
+					<div class="room-head">
+						<h2 id="roomTitle">Interview</h2><span class="ai-ind"><span class="orb" aria-hidden="true"></span>AI
+							interviewer (demo)</span>
+					</div>
+					<div class="progress" role="progressbar" aria-label="Interview progress" aria-valuemin="0" aria-valuemax="100"
+						aria-valuenow="0"><span id="bar"></span></div>
+					<div id="history" class="history" aria-live="polite"></div>
+					<div id="typing" class="typing" hidden aria-label="Interviewer is typing"><i></i><i></i><i></i></div>
+					<div id="qCard" class="card qcard"><small id="qMeta"></small>
+						<p id="qText" tabindex="-1"></p>
+						<p id="hintText" class="hint" hidden></p>
+					</div>
+					<div id="answerBox" class="field">
+						<label for="answer">Your answer</label>
+						<textarea id="answer" rows="7" placeholder="Type your answer here."></textarea>
+						<div id="roomErr" class="err" role="alert" hidden></div>
+						<div class="row">
+							<button id="hintBtn" class="btn ghost sm" type="button">Show a hint</button>
+							<button id="micBtn" class="btn ghost sm" type="button">Dictate</button>
+							<span class="spacer"></span>
+							<button id="skipBtn" class="btn ghost" type="button">Skip question</button>
+							<button id="submitBtn" class="btn primary" type="button">Submit answer</button>
+						</div>
+						<small id="micNote" class="muted"></small>
+					</div>
+					<div id="feedback" class="card fb" hidden></div>
+					<button id="nextBtn" class="btn primary" type="button" hidden>Next question</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="results" class="wrap section" hidden>
+			<h2>Session summary</h2>
+			<p class="muted">These notes come from simple rules, not a judgment of your ability. Use them as prompts for
+				practice.</p>
+			<div id="resCards" class="grid3"></div>
+			<div class="row">
+				<button id="retryBtn" class="btn ghost" type="button">Retry this interview</button>
+				<button id="weakBtn" class="btn ghost" type="button">Practice weak areas</button>
+				<button id="newBtn" class="btn primary" type="button">Start a new session</button>
+			</div>
+		</section>
+	</main>
+
+	<footer class="wrap foot"><small>ResuMind runs in your browser. In demo mode your text never leaves this page.</small>
+	</footer>
+	<div id="toast" class="toast" role="status" aria-live="polite"></div>
+	<script src="script.js"></script>
+</body>
+
+</html>
